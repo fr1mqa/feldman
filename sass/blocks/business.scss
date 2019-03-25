@@ -1,0 +1,71 @@
+.business {
+  min-height: 800px;
+  padding: 70px 40px 70px 95px;
+  background: url("../img/campus-bg.jpg") no-repeat -250px top;
+  background-size: auto 100%;
+
+  @media (max-width: 900px) {
+    padding: 70px 15px 70px;
+  }
+  &__wrapper {
+    margin-right: 70px;
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+  &__title {
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    color: $business-title-color;
+    font-family: $P22-Heavy;
+    font-size: 57px;
+    letter-spacing: -0.9px;
+    text-transform: uppercase;
+    @media (max-width: 900px) {
+      font-size: 50px;
+    }
+  }
+  &__text {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    color: $business-text-color;
+    font-family: $DIN-Light;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.4px;
+    @media (max-width: 900px) {
+      max-width: 570px;
+    }
+  }
+  &__link {
+    color: $business-link-color;
+    font-family: $DIN-Light;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.4px;
+    text-decoration: none;
+  }
+  &__image {
+      width: 100%;
+    &-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      @media (max-width: 900px) {
+        max-width: 570px;
+      }
+    }
+  }
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}

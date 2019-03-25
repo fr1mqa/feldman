@@ -1,0 +1,16 @@
+.header {
+  min-height: 800px;
+  padding: 90px 105px 70px;
+  background: url("../img/header-bg-small.jpg") no-repeat 80% top;
+  background-size: auto 100%;
+  @media (max-width: 900px) {
+    padding: 90px 15px 70px;
+  }
+  @media (max-width: 1279px) {
+    background: url("../img/header-bg-small.jpg") no-repeat left top;
+    background-size: auto 100%;
+  }
+  & .container {
+
+  }
+}

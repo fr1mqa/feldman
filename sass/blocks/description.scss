@@ -1,0 +1,100 @@
+.description {
+  position: relative;
+  min-height: 575px;
+  max-width: 1650px;
+  padding: 30px 30px 0;
+  border-top: 7px solid $desc-border-color;
+  border-right: 7px solid $desc-border-color;
+  border-bottom: 7px solid $desc-border-color;
+  &__quote {
+    position: relative;
+    max-width: 655px;
+    margin: 0 0 20px -50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 899px) {
+      margin: 0 0 20px -30px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top:-30px;
+      width: 7px;
+      height: 20px;
+      background-color: $desc-border-color;
+      @media (min-width: 900px) {
+        left: 20px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom:0;
+      width: 7px;
+      height: 15px;
+      background-color: $desc-border-color;
+      @media (min-width: 900px) {
+        left: 20px;
+      }
+    }
+    &-text {
+      margin: 0 0 20px;
+      color: $desc-quote-text-color;
+      font-family: $DIN-Bold;
+      font-size: 28px;
+      letter-spacing: -0.5px;
+      &--yellow {
+        color: $desc-quote-yellow-text-color;
+      }
+    }
+    &-author {
+      align-self: flex-end;
+      margin: 0;
+      color: $desc-quote-text-color;
+      font-family: $DIN-Light;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+  &__author {
+    margin: 0 0 40px -50px;
+    display: flex;
+    flex-direction: column;
+    color: $desc-author-color;
+    font-family: $P22-Heavy;
+    font-size: 81px;
+    line-height: 65px;
+    text-transform: uppercase;
+    @media (max-width: 899px) {
+      font-size: 60px;
+      margin: 0 0 40px -30px;
+    }
+  }
+  &__text {
+    position: relative;
+    max-width: 630px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    color: $desc-text-color;
+    font-family: $DIN-Light;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &__wrapper {
+    position: relative;
+    padding-bottom: 31px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top:0;
+      width: 7px;
+      height: 100%;
+      background-color: $desc-border-color;
+    }
+  }
+}

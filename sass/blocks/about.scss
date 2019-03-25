@@ -1,0 +1,25 @@
+.about {
+  min-height: 800px;
+  padding: 70px 55px 0 95px;
+  @media (max-width: 900px) {
+    padding: 70px 15px 0;
+  }
+  &__wrapper {
+
+  }
+  &__title {
+    margin: 0 0 70px;
+    color: $about-title-color;
+    font-family: $P22-Heavy;
+    font-size: 57px;
+    text-transform: uppercase;
+  }
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

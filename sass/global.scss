@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
