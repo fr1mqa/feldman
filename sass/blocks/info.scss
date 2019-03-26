@@ -1,6 +1,6 @@
 .info {
   margin-right: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   @media (max-width: 900px){
     margin-right: 0;
     display: flex;
@@ -16,11 +16,11 @@
     font-size: 29px;
     line-height: 22px;
     text-transform: uppercase;
-    border-bottom: 1px solid $info-title-border-color;
+    border-bottom: 2px solid $info-title-border-color;
   }
   &__text {
     max-width: 520px;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     display: flex;
     flex-direction: column;
     color: $info-text-color;
@@ -28,16 +28,8 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: -0.3px;
-  }
-  &__link {
-    padding-bottom: 10px;
-    color: $info-link-color;
-    font-family: $DIN-Bold;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-bottom: 1px solid $info-link-border-color;
+    @media (max-width: 900px) {
+      max-width: 570px;
+    }
   }
 }

@@ -1,8 +1,12 @@
 .header {
+  position: relative;
   min-height: 800px;
   padding: 90px 105px 70px;
   background: url("../img/header-bg-small.jpg") no-repeat 80% top;
   background-size: auto 100%;
+  @media (max-width: 650px) {
+    padding: 20px 15px 70px!important;
+  }
   @media (max-width: 900px) {
     padding: 90px 15px 70px;
   }
@@ -11,6 +15,13 @@
     background-size: auto 100%;
   }
   & .container {
-
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/header-bg-small@2x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background-image: url("../img/header-bg-small@3x.jpg");
+  }
+
 }

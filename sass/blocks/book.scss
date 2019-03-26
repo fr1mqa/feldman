@@ -1,9 +1,16 @@
 .book {
   position: relative;
+  max-width: 700px;
+  width: 100%;
   padding: 6px 25px 25px;
   border: solid 2px $book-border-color;
   @media (max-width: 900px) {
     padding: 6px 15px 25px;
+  }
+  &__list {
+  }
+  &__item {
+
   }
   &__wrapper {
     display: flex;
@@ -32,6 +39,7 @@
     &--english {
       font-family: $P22-Book;
       font-size: 19px;
+      margin-left: 10px;
     }
   }
   &__description {

@@ -3,6 +3,14 @@
   min-height: 800px;
   padding: 75px 85px 110px 50px;
   background: url("../img/author.png") no-repeat center bottom;
+  background-size: 921px 614px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/author@2x.png");
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background-image: url("../img/author@3x.png");
+  }
   @media (max-width: 900px) {
     padding: 75px 15px 0;
   }
@@ -16,7 +24,7 @@
     border-style: solid;
     border-width: 100px;
     border-color: transparent transparent $lectures-theme-3-border-color transparent;
-    @media (max-width: 1120px) {
+    @media (max-width: 900px) {
       display: none;
     }
   }
@@ -24,6 +32,7 @@
     background: none;
   }
   &__title {
+    align-self: center;
     margin: 0 0 15px;
     color: $lectures-title-color;
     font-family: $P22-Heavy;
@@ -31,6 +40,7 @@
     letter-spacing: -0.8px;
     text-transform: uppercase;
     text-align: center;
+    border-bottom: 2px solid $border-color;
 
   }
   &__subtitle {
@@ -62,7 +72,7 @@
       margin: 0 0 50px!important;
       border-bottom: 2px solid $lectures-theme-1-border-color;
     }
-    @media (max-width: 1120px) {
+    @media (max-width: 900px) {
       &::before,
       &::after {
         display: none;
@@ -113,19 +123,6 @@
     &:nth-child(3) {
       margin-left: 35px;
       margin-bottom: 5px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 330px;
-        top: -100px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 50px;
-        border-color: transparent transparent $lectures-theme-2-border-color transparent;
-        transform: rotate(-15deg);
-        z-index: -1;
-      }
       &::after {
         content: "";
         position: absolute;
@@ -143,18 +140,6 @@
     &:nth-child(4) {
       text-align: right;
       margin-right: 35px;
-      &::before {
-        content: "";
-        position: absolute;
-        right: 300px;
-        top: -200px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 80px;
-        border-color: transparent transparent $lectures-theme-2-border-color transparent;
-        z-index: -1;
-      }
       &::after {
         content: "";
         position: absolute;
@@ -189,5 +174,7 @@
   }
   & .container {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }

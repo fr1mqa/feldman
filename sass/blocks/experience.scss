@@ -1,5 +1,5 @@
 .experience {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
     }
   }
   &__description {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     color: $exp-text-color;
     font-family: $DIN-Light;
     font-size: 18px;

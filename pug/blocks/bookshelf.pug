@@ -1,4 +1,4 @@
-section.bookshelf
+section.bookshelf#bookshelf
     .container
         .bookshelf__wrapper
             h2.bookshelf__title Книжная полка
@@ -10,5 +10,13 @@ section.bookshelf
             p.bookshelf__text
                 span Буду рад, если что-то из моего списка покажется вам интересным и полезным.
             include book
-        .bookshelf__image-wrapper
-            img(src="img/book-1.jpg" srcset="img/book-1@2x.jpg 2x, img/book-1@3x.jpg 3x" alt="Son of Hamas").bookshelf__image
+        ul.bookshelf__image-list
+            li.bookshelf__image-item
+                img(src="img/book-1.jpg" srcset="img/book-1@2x.jpg 2x, img/book-1@3x.jpg 3x" alt="Son of Hamas").bookshelf__image
+            li.bookshelf__image-item
+                img(src="img/book-1.jpg" srcset="img/book-1@2x.jpg 2x, img/book-1@3x.jpg 3x" alt="Son of Hamas").bookshelf__image
+            li.bookshelf__image-item
+                img(src="img/book-1.jpg" srcset="img/book-1@2x.jpg 2x, img/book-1@3x.jpg 3x" alt="Son of Hamas").bookshelf__image
+            li.bookshelf__image-item
+                img(src="img/book-1.jpg" srcset="img/book-1@2x.jpg 2x, img/book-1@3x.jpg 3x" alt="Son of Hamas").bookshelf__image
+    a(href="").bookshelf__link Подписаться на обновления

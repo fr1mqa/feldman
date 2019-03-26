@@ -3,7 +3,13 @@
   padding: 70px 40px 70px 95px;
   background: url("../img/campus-bg.jpg") no-repeat -250px top;
   background-size: auto 100%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/campus-bg@2x.jpg");
+  }
 
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background-image: url("../img/campus-bg@3x.jpg");
+  }
   @media (max-width: 900px) {
     padding: 70px 15px 70px;
   }
@@ -17,15 +23,20 @@
     }
   }
   &__title {
-    max-width: 1250px;
-    margin: 0 auto 100px;
+    display: inline-block;
+    margin: 0 0 100px;
     color: $business-title-color;
     font-family: $P22-Heavy;
     font-size: 57px;
     letter-spacing: -0.9px;
     text-transform: uppercase;
+    border-bottom: 2px solid $border-color;
     @media (max-width: 900px) {
       font-size: 50px;
+    }
+    &-wrapper {
+      max-width: 1250px;
+      margin: 0 auto;
     }
   }
   &__text {

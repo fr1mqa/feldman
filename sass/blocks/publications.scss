@@ -1,16 +1,18 @@
 .publications {
-  min-height: 800px;
+  min-height: 600px;
   padding: 110px 90px 70px 95px;
   @media (max-width: 900px) {
     padding: 110px 15px 70px;
   }
   &__title {
+    display: inline-block;
     margin: 0 0 50px;
     color: $publication-title-color;
     font-family: $P22-Heavy;
     font-size: 57px;
     letter-spacing: -0.9px;
     text-transform: uppercase;
+    border-bottom: 2px solid $border-color;
     @media (max-width: 900px){
       font-size: 40px;
     }
