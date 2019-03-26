@@ -10,3 +10,4 @@ npm-debug.*
 Thumbs.db
 package-lock.*
 build/
+.firebase/hosting.YnVpbGQ.cache
