@@ -7,8 +7,12 @@
   @media (max-width: 900px) {
     padding: 110px 15px 70px;
   }
+  & .slick-slide img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
   &__wrapper {
-    width: 100%!important;
+    width: 100%;
     @media (max-width: 900px) {
       max-width: 570px;
     }
@@ -40,12 +44,23 @@
     }
   }
   &__image {
+    display: block;
+
+    max-width: 400px!important;
     &-list {
       max-width: 400px;
-      align-self: flex-end;
+      width: 100%;
       @media (max-width: 1200px) {
         display: none!important;
       }
+      & .slick-track {
+        display: flex!important;
+        align-items: flex-end;
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
     }
   }
   & .container {

@@ -7,20 +7,27 @@ section.articles
         li.articles__item
             .articles__item-wrapper
                 .articles__title-wrapper
-                    img(src="img/article-photo-1.jpg" srcset="img/article-photo-1@2x.jpg 2x, img/article-photo-1@3x.jpg 3x" alt="Секрет фирмы").articles__image
+                    img(data-src="img/article-photo-1.jpg" data-srcset="img/article-photo-1@2x.jpg 2x, img/article-photo-1@3x.jpg 3x" alt="Секрет фирмы").articles__image.lazyloading
                     h3.articles__title Секретное оружие:
                         span Как хуцпа помогла Израилю стать страной стартапов
                 .articles__link-wrapper
-                    a(href="").articles__link <img src="img/article-logo-1.png" srcset="img/article-logo-1@2x.png 2x, img/article-logo-1@3x.png 3x" alt="Секрет фирмы" class="articles__logo"> читать
+                    a(href="https://secretmag.ru/business/methods/hucpa-i-it.htm").articles__link <img data-src="img/article-logo-1.png" data-srcset="img/article-logo-1@2x.png 2x, img/article-logo-1@3x.png 3x" alt="Секрет фирмы" class="articles__logo lazyloading"> читать
             p.articles__description На недавнем Петербургском форуме профессор Лорен Грэхем из MIT рассуждал, почему мы в России так хорошо умеем изобретать и так плохо — конвертировать идеи в инновации.
                 span Ответ в статье Максима Фельдмана.
         li.articles__item
             .articles__item-wrapper
                 .articles__title-wrapper
-                    img(src="img/article-photo-1.jpg" srcset="img/article-photo-1@2x.jpg 2x, img/article-photo-1@3x.jpg 3x" alt="Секрет фирмы").articles__image
-                    h3.articles__title Секретное оружие:
-                        span Как хуцпа помогла Израилю стать страной стартапов
+                    img(data-src="img/article-photo-2.jpg" data-srcset="img/article-photo-2@2x.jpg 2x, img/article-photo-2@3x.jpg 3x" alt="РБК").articles__image.lazyloading
+                    h3.articles__title «Ключевым вопросом новой программы MBA будет бизнес в Евразии»
                 .articles__link-wrapper
-                    a(href="").articles__link <img src="img/article-logo-1.png" srcset="img/article-logo-1@2x.png 2x, img/article-logo-1@3x.png 3x" alt="Секрет фирмы" class="articles__logo"> читать
-            p.articles__description На недавнем Петербургском форуме профессор Лорен Грэхем из MIT рассуждал, почему мы в России так хорошо умеем изобретать и так плохо — конвертировать идеи в инновации.
-                span Ответ в статье Максима Фельдмана.
+                    a(href="https://plus.rbc.ru/news/59b994e67a8aa926c7e1a2b8").articles__link <img data-src="img/article-logo-2.svg" data-srcset="img/article-logo-2.svg" alt="РБК" class="articles__logo lazyloading"> читать
+            p.articles__description О том, как трансформируются программы подготовки менеджеров и собственников бизнеса, РБК+ рассказал директор департамента MBA и EMBA Московской школы управления «Сколково» Максим Фельдман.
+        li.articles__item
+            .articles__item-wrapper
+                .articles__title-wrapper
+                    img(data-src="img/article-photo-3.jpg" data-srcset="img/article-photo-3@2x.jpg 2x, img/article-photo-3@3x.jpg 3x" alt="RusBase").articles__image.lazyloading
+                    h3.articles__title Идеальные выходные в Галилее:
+                        span гид от топ-менеджера Московской школы управления "Сколково"
+                .articles__link-wrapper
+                    a(href="https://rb.ru/article/idealnye-vyhodnye-v-galilee-gid-ot-top-menedjera-moskovskoy-shkoly-upravleniya-skolkovo/7563977.html").articles__link <img data-src="img/article-logo-3.svg" data-srcset="img/article-logo-3.svg" alt="RusBase" class="articles__logo lazyloading"> читать
+            p.articles__description Сегодня  руководитель направления по работе с клиентами Московской школы управления "Сколково" Максим Фельдман  делится воспоминаниями о своем первом знакомстве с Галилеей, исторической областью на севере  Израиля, где он прожил 12 лет.

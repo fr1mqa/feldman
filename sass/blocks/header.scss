@@ -16,12 +16,12 @@
   }
   & .container {
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("../img/header-bg-small@2x.jpg");
-  }
-
-  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-    background-image: url("../img/header-bg-small@3x.jpg");
-  }
+  //@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  //  background-image: url("../img/header-bg-small@2x.jpg");
+  //}
+  //
+  //@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  //  background-image: url("../img/header-bg-small@3x.jpg");
+  //}
 
 }

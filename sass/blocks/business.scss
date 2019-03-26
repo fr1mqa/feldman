@@ -3,13 +3,13 @@
   padding: 70px 40px 70px 95px;
   background: url("../img/campus-bg.jpg") no-repeat -250px top;
   background-size: auto 100%;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("../img/campus-bg@2x.jpg");
-  }
-
-  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-    background-image: url("../img/campus-bg@3x.jpg");
-  }
+  //@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  //  background-image: url("../img/campus-bg@2x.jpg");
+  //}
+  //
+  //@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+  //  background-image: url("../img/campus-bg@3x.jpg");
+  //}
   @media (max-width: 900px) {
     padding: 70px 15px 70px;
   }

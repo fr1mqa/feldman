@@ -8,9 +8,22 @@
     padding: 6px 15px 25px;
   }
   &__list {
+    & .slick-track {
+      display: flex!important;
+      align-items: self-start;
+    }
   }
   &__item {
-
+    &:nth-child(12) {
+      .book__name {
+        font-size: 26px;
+      }
+    }
+    &:nth-child(17) {
+      .book__name {
+        font-size: 30px;
+      }
+    }
   }
   &__wrapper {
     display: flex;
@@ -35,7 +48,7 @@
     flex-direction: column;
     color: $book-name-color;
     font-family: $P22-Heavy;
-    font-size: 51px;
+    font-size: 40px;
     &--english {
       font-family: $P22-Book;
       font-size: 19px;
@@ -43,6 +56,8 @@
     }
   }
   &__description {
+    display: flex;
+    flex-direction: column;
     max-width: 575px;
     margin: 0;
     color: $book-description-color;
