@@ -28,12 +28,12 @@
   &__quote {
     position: relative;
     max-width: 655px;
-    margin: 0 0 20px -50px;
+    margin: 0 0 30px -50px;
     padding: 0;
     display: flex;
     flex-direction: column;
     @media (max-width: 899px) {
-      margin: 0 0 20px -30px;
+      margin: 0 0 45px -30px;
     }
     &::before {
       content: "";
@@ -48,7 +48,7 @@
       }
     }
     &-text {
-      margin: 0 0 40px;
+      margin: 0 0 10px;
       color: $desc-quote-text-color;
       font-family: $DIN-Bold;
       font-size: 28px;

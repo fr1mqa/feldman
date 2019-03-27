@@ -32,7 +32,7 @@
     text-transform: uppercase;
     border-bottom: 2px solid $border-color;
     @media (max-width: 900px) {
-      font-size: 50px;
+      font-size: 35px;
     }
     &-wrapper {
       max-width: 1250px;
@@ -60,7 +60,6 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: -0.4px;
-    text-decoration: none;
   }
   &__image {
       width: 100%;

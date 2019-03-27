@@ -54,4 +54,21 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
+$('.book__list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    var navigationNext = $('.book__navigation-prev');
+    var navigationPrev = $('.book__navigation-next');
+    var booksList = $('.book__item').not('.slick-cloned');
+    var positionNext = 0;
+    var positionPrev = 0;
+    navigationNext.text(function(index, text) {
+        if (nextSlide === booksList.length - 1) {
+            positionNext = 1;
+            console.log('loh')
+        } else {
+            positionNext = nextSlide + 2;
+            console.log('pidr')
+        }
+        text = text.substr(0,1) + positionNext;
+        return text;
+    });
+});

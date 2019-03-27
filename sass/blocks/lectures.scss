@@ -1,9 +1,9 @@
 .lectures {
   position: relative;
   min-height: 800px;
-  padding: 75px 85px 110px 50px;
-  background: url("../img/author.png") no-repeat center bottom;
-  background-size: 921px 614px;
+  padding: 75px 85px 0 50px;
+  background: url("../img/author.png") no-repeat calc(50% - 70px) bottom;
+  background-size: 606px 546px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url("../img/author@2x.png");
   }
@@ -176,5 +176,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
+  }
+  &__wrapper {
+    @media (max-width: 900px) {
+      height: 87vw;
+      max-height: 550px;
+      max-width: 600px;
+      margin: 0 auto;
+      background: url("../img/author.png") no-repeat center bottom;
+      background-size: 100% auto;
+    }
   }
 }
