@@ -63,10 +63,21 @@ $('.book__list').on('beforeChange', function(event, slick, currentSlide, nextSli
     navigationNext.text(function(index, text) {
         if (nextSlide === booksList.length - 1) {
             positionNext = 1;
-            console.log('loh')
         } else {
             positionNext = nextSlide + 2;
-            console.log('pidr')
+        }
+        text = text.substr(0,1) + positionNext;
+        return text;
+    });
+    navigationPrev.text(function(index, text) {
+        if (nextSlide === booksList.length - 1) {
+            positionNext = booksList.length - 1;
+        } else if (currentSlide === 0 && nextSlide !== 1) {
+            positionNext = currentSlide + 1;
+        } else if (currentSlide === 1 && nextSlide === 0 || currentSlide === booksList.length - 1 && nextSlide === 0) {
+            positionNext = booksList.length;
+        } else {
+            positionNext = nextSlide;
         }
         text = text.substr(0,1) + positionNext;
         return text;
