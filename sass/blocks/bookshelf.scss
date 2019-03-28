@@ -9,6 +9,7 @@
   }
   & .slick-slide img {
     max-width: 400px;
+    width: 100%;
     margin: 0 auto;
   }
   &__wrapper {
@@ -45,7 +46,6 @@
   }
   &__image {
     display: block;
-
     max-width: 400px!important;
     &-list {
       max-width: 400px;

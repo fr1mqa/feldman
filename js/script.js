@@ -801,3 +801,13 @@ $('.book__list').on('beforeChange', function(event, slick, currentSlide, nextSli
         return text;
     });
 });
+
+$('.articles__list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    var themesTitleList = $('.themes__title');
+    themesTitleList[nextSlide].classList.add('themes__title--active');
+    themesTitleList[currentSlide].classList.remove('themes__title--active');
+});
+
+$('.themes__item').on('click', function () {
+    $('.articles__list').slick('slickGoTo', $(this).index());
+});
