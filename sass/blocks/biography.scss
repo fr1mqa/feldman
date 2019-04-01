@@ -1,0 +1,85 @@
+.biography {
+  height: 90vh;
+  padding: 15px 15px;
+  background-color: #fff;
+  @media (min-width: 900px) {
+    padding: 50px;
+  }
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #e6e6e6;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #808080;
+  }
+  &__header {
+    margin-bottom: 100px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      color: $biography-text-color;
+      font-family: $DIN-Light;
+      font-style: italic;
+      font-size: 19px;
+      line-height: 23px;
+
+      @media (min-width: 900px) {
+        align-items: flex-end;
+      }
+    }
+  }
+  &__link {
+    color: $biography-text-color;
+  }
+  &__content {
+    margin-bottom: 50px;
+  }
+  &__title {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    color: $biography-title-color;
+    font-family: $P22-Heavy;
+    font-size: 29px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $border-color;
+  }
+  &__subtitle {
+    margin: 0 0 30px;
+    color: $biography-subtitle-color;
+    font-family: $DIN-Bold;
+  }
+  &__text {
+    margin: 0 0 20px;
+    color: $biography-text-color;
+    font-family: $DIN-Light;
+    font-size: 20px;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 900px) {
+      align-items: flex-end;
+    }
+  }
+  &__author {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: $biography-text-color;
+    font-family: $DIN-Light;
+    font-size: 16px;
+    @media (min-width: 900px) {
+      align-items: flex-end;
+    }
+    &-position {
+      margin: 0;
+      color: $biography-text-color;
+      font-family: $DIN-Light;
+      font-size: 16px;
+    }
+  }
+}

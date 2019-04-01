@@ -744,6 +744,24 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear',
     });
+    //modal
+    $(".about__link").on("click", function(e) {
+        e.preventDefault();
+        $('.modal').toggleClass('modal-hidden');
+        $('.modal__wrapper').animate({top: $(window).scrollTop() + 20 + 'px'}, 100);
+        return false;
+    });
+    $(document).mouseup(function (e){
+        var div = $(".modal__wrapper");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.animate({top: - 600 + 'px'}, 100);
+            $('.modal').addClass('modal-hidden');
+        }
+    });
+    $(".modal__close").on("click", function(e) {
+        $('.modal').toggleClass('modal-hidden');
+    });
 });
 
 //lazy load
