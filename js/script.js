@@ -745,8 +745,11 @@ $(document).ready(function(){
         cssEase: 'linear',
     });
     //modal
-    $(".about__link").on("click", function(e) {
-        e.preventDefault();
+    $(".about__link").on("click", function() {
+        var scrollWidth = window.innerWidth - $(window).width() + 'px';
+        $("body").css("overflow", "hidden");
+        $("html").css("overflow", "hidden");
+        $("html").css("padding-right", scrollWidth);
         $('.modal').toggleClass('modal-hidden');
         $('.modal__wrapper').animate({top: $(window).scrollTop() + 20 + 'px'}, 100);
         return false;
@@ -755,12 +758,18 @@ $(document).ready(function(){
         var div = $(".modal__wrapper");
         if (!div.is(e.target)
             && div.has(e.target).length === 0) {
-            div.animate({top: - 600 + 'px'}, 100);
+            div.animate({top: -600 + 'px'}, 100);
             $('.modal').addClass('modal-hidden');
+            $("html").css("padding-right", 0);
+            $("body").css("overflow", "initial");
+            $("html").css("overflow", "unset");
         }
     });
-    $(".modal__close").on("click", function(e) {
+    $(".modal__close").on("click", function() {
         $('.modal').toggleClass('modal-hidden');
+        $("html").css("padding-right", 0);
+        $("body").css("overflow", "initial");
+        $("html").css("overflow", "unset");
     });
 });
 
