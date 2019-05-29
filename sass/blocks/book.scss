@@ -24,6 +24,11 @@
         font-size: 30px;
       }
     }
+    &:nth-child(26) {
+      .book__name {
+        font-size: 29px;
+      }
+    }
   }
   &__wrapper {
     display: flex;
